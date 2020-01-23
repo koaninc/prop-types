@@ -9,7 +9,7 @@
 
 var printWarning = function() {};
 
-if (process.env.NODE_ENV !== 'production') {
+if (false && process.env.NODE_ENV !== 'production') {
   var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');
   var loggedTypeFailures = {};
   var has = require('./lib/has');
