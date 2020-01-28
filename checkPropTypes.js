@@ -16,7 +16,7 @@ if (process.env.NODE_ENV !== 'production') {
 
   printWarning = function(text) {
     var message = 'Warning: ' + text;
-    if (typeof console !== 'undefined') {
+    if (typeof console !== 'undefined' && process.env.SHOW_PROPTYPE_WARNINGS) {
       console.error(message);
     }
     try {
